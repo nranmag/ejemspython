@@ -1,0 +1,40 @@
+[06-11-19 13:36:50] (W) ***** CAUGHT EXCEPTION IN MGEN PUBLISHER *****
+[06-11-19 13:36:50] (W)       MGEN will continue, but it is best to determine why the exception occurred
+[06-11-19 13:36:50] (W)       Exception details are in trace.log and/or the log for this workflow
+[06-11-19 13:36:50] (W) ***** END EXCEPTION IN MGEN PUBLISHER *****
+[06-11-19 13:36:50] (I) The site configuration specifies 'sgen_option' = /data/purescale/smash/ipas.mgen/../../gsa/mgen/laptops/guadmgen03/siteconfigs/sgen/v2.2.5.0/response.gdl.cell3-g8296.properties
+[06-11-19 13:36:53] (I) The specified response file 'response.gdl.cell3-g8296.properties' has passed all validation checks and will be passed to the SGEN workflow
+[06-11-19 13:36:53] (W) ***** CAUGHT EXCEPTION IN MGEN PUBLISHER *****
+[06-11-19 13:36:53] (W)       MGEN will continue, but it is best to determine why the exception occurred
+[06-11-19 13:36:53] (W)       Exception details are in trace.log and/or the log for this workflow
+[06-11-19 13:36:53] (W) ***** END EXCEPTION IN MGEN PUBLISHER *****
+[06-11-19 13:36:53] (I) Start of SGEN
+[06-11-19 13:36:54] (I) Retrieving history: Number of completed steps: 0, latest message: No additional information
+[06-11-19 13:36:54] (I) Sleeping for 2 minutes.
+[06-11-19 13:38:54] (I) Retrieving history: Number of completed steps: 1, latest message: Setup and configure temporary IP Group - starting.
+[06-11-19 13:38:54] (I) Sleeping for 2 minutes.
+[06-11-19 13:40:54] (I) Retrieving history: Number of completed steps: 1, latest message: Setup and configure temporary IP Group - starting.
+[06-11-19 13:40:54] (I) Sleeping for 2 minutes.
+[06-11-19 13:42:54] (I) Retrieving history: Number of completed steps: 1, latest message: Setup and configure temporary IP Group - starting.
+[06-11-19 13:42:54] (I) Sleeping for 2 minutes.
+[06-11-19 13:44:54] (I) Retrieving history: Number of completed steps: 4, latest message: No additional information
+[06-11-19 13:44:54] (I) Setup and configuration job started
+[06-11-19 13:44:54] (I) Setup and configure the data network - starting.
+[06-11-19 13:44:54] (I) Generating config for the TOR switches...
+[06-11-19 13:44:54] (I) Applying config to TOR1 (fd8c:215d:178e:c0de:a68c:dbff:fe68:be00)...
+[06-11-19 13:44:54] (I) Applying config to TOR2 (fd8c:215d:178e:c0de:a68c:dbff:fe68:200)...
+[06-11-19 13:44:54] (I) Applying config to VMware Distributed Virtual Switch...
+[06-11-19 13:44:54] (I) Validating network configurations...
+[06-11-19 13:44:54] (I) Setup and configure the data network - completed successfully.
+[06-11-19 13:44:54] (I) Setup and configure temporary IP Group - starting.
+[06-11-19 13:44:54] (I) Setup and configure temporary IP Group - completed successfully.
+[06-11-19 13:44:54] (I) Save the configuration settings - starting.
+[06-11-19 13:44:54] (I) Save the configuration settings - completed successfully.
+[06-11-19 13:44:54] (I) Confirm the given network configuration - starting.
+[06-11-19 13:44:54] (I) Confirm the given network configuration - completed successfully.
+[06-11-19 13:44:54] (I) Setup and configuration job completed successfully.
+[06-11-19 13:44:54] (I) SGEN completed successfully.
+[06-11-19 13:44:54] (W) ***** CAUGHT EXCEPTION IN MGEN PUBLISHER *****
+[06-11-19 13:44:54] (W)       MGEN will continue, but it is best to determine why the exception occurred
+[06-11-19 13:44:54] (W)       Exception details are in trace.log and/or the log for this workflow
+[06-11-19 13:44:54] (W) ***** END EXCEPTION IN MGEN PUBLISHER *****

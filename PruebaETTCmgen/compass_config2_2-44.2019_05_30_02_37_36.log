@@ -1,0 +1,1627 @@
+[05-30-19 02:37:36] 32613 mgen.publisher.WorkflowPublisher | WorkflowPublisher(name,isVgen) - workflow name=compass_config2_2 - isVgen=false
+[05-30-19 02:37:36] 32613 mgen.publisher.WorkflowPublisher | publishWorkflowStart() - workflow name=compass_config2_2
+[05-30-19 02:37:36] 32613 utils.process  | executing command: [ping, -c, 1, -w, 2, 9.18.68.44] env=null
+[05-30-19 02:37:36] 32613 mgen.steps.utils.REST | config: {host=http://guaddd03.gdl.mex.ibm.com, port=9080, contentType=[, application/json]}
+[05-30-19 02:37:36] 32613 mgen.publisher.RESTWrapper | Before conn.doPost, URL=http://guaddd03.gdl.mex.ibm.com:9080/MGENPublishing/jaxrs/workflowstart
+[05-30-19 02:37:36] 32613 mgen.publisher.RESTWrapper | After conn.doPost, URL=http://guaddd03.gdl.mex.ibm.com:9080/MGENPublishing/jaxrs/workflowstart -- responseStatus = 500
+[05-30-19 02:37:36] 32613 mgen.publisher.ExceptionHandler | <b>***** CAUGHT EXCEPTION IN MGEN PUBLISHER *****</b>
+[05-30-19 02:37:36] 32613 mgen.publisher.ExceptionHandler | <b>      MGEN will continue, but it is best to determine why the exception occurred</b>
+[05-30-19 02:37:36] 32613 mgen.publisher.ExceptionHandler | <b>      Exception details are in trace.log and/or the log for this workflow</b>
+[05-30-19 02:37:36] 32613 mgen.publisher.ExceptionHandler |       MGEN PUBLISHER is ignoring exception -->> java.lang.Exception: REST doPost call failed, responseStatus = 500, URL=http://guaddd03.gdl.mex.ibm.com:9080/MGENPublishing/jaxrs/workflowstart
+[05-30-19 02:37:36] 32613  java.lang.Exception: REST doPost call failed, responseStatus = 500, URL=http://guaddd03.gdl.mex.ibm.com:9080/MGENPublishing/jaxrs/workflowstart
+[05-30-19 02:37:36] 32613  	at sun.reflect.GeneratedConstructorAccessor145.newInstance(Unknown Source)
+[05-30-19 02:37:36] 32613  	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+[05-30-19 02:37:36] 32613  	at java.lang.reflect.Constructor.newInstance(Constructor.java:436)
+[05-30-19 02:37:36] 32613  	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+[05-30-19 02:37:36] 32613  	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:71)
+[05-30-19 02:37:36] 32613  	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:81)
+[05-30-19 02:37:36] 32613  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+[05-30-19 02:37:36] 32613  	at mgen.publisher.RESTWrapper$_postStatusMsg_closure2.doCall(RESTWrapper.groovy:61)
+[05-30-19 02:37:36] 32613  	at sun.reflect.GeneratedMethodAccessor572.invoke(Unknown Source)
+[05-30-19 02:37:36] 32613  	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+[05-30-19 02:37:36] 32613  	at java.lang.reflect.Method.invoke(Method.java:507)
+[05-30-19 02:37:36] 32613  	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+[05-30-19 02:37:36] 32613  	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+[05-30-19 02:37:36] 32613  	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1056)
+[05-30-19 02:37:36] 32613  	at zero.core.groovysupport.GroovySupportMetaClass.invokeMethod(GroovySupportMetaClass.java:54)
+[05-30-19 02:37:36] 32613  	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:884)
+[05-30-19 02:37:36] 32613  	at groovy.lang.Closure.call(Closure.java:394)
+[05-30-19 02:37:36] 32613  	at groovy.lang.Closure.call(Closure.java:407)
+[05-30-19 02:37:36] 32613  	at groovy.lang.Closure$call$0.call(Unknown Source)
+[05-30-19 02:37:36] 32613  	at mgen.steps.utils.REST.withConnection(REST.groovy:104)
+[05-30-19 02:37:36] 32613  	at mgen.steps.utils.REST$withConnection.call(Unknown Source)
+[05-30-19 02:37:36] 32613  	at mgen.publisher.RESTWrapper.postStatusMsg(RESTWrapper.groovy:55)
+[05-30-19 02:37:36] 32613  	at mgen.publisher.RESTWrapper$postStatusMsg.call(Unknown Source)
+[05-30-19 02:37:36] 32613  	at mgen.publisher.WorkflowPublisher.publishWorkflowStart(WorkflowPublisher.groovy:124)
+[05-30-19 02:37:36] 32613  	at mgen.publisher.WorkflowPublisher$publishWorkflowStart.call(Unknown Source)
+[05-30-19 02:37:36] 32613  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callSafe(AbstractCallSite.java:83)
+[05-30-19 02:37:36] 32613  	at mgen.Workflow$_start_closure10.doCall(Workflow.groovy:325)
+[05-30-19 02:37:36] 32613  	at sun.reflect.GeneratedMethodAccessor589.invoke(Unknown Source)
+[05-30-19 02:37:36] 32613  	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+[05-30-19 02:37:36] 32613  	at java.lang.reflect.Method.invoke(Method.java:507)
+[05-30-19 02:37:36] 32613  	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSite.invoke(PogoMetaMethodSite.java:225)
+[05-30-19 02:37:36] 32613  	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:51)
+[05-30-19 02:37:36] 32613  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+[05-30-19 02:37:36] 32613  	at mgen.Workflow$_start_closure10.doCall(Workflow.groovy)
+[05-30-19 02:37:36] 32613  	at sun.reflect.GeneratedMethodAccessor587.invoke(Unknown Source)
+[05-30-19 02:37:36] 32613  	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+[05-30-19 02:37:36] 32613  	at java.lang.reflect.Method.invoke(Method.java:507)
+[05-30-19 02:37:36] 32613  	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+[05-30-19 02:37:36] 32613  	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+[05-30-19 02:37:36] 32613  	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1056)
+[05-30-19 02:37:36] 32613  	at zero.core.groovysupport.GroovySupportMetaClass.invokeMethod(GroovySupportMetaClass.java:54)
+[05-30-19 02:37:36] 32613  	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:884)
+[05-30-19 02:37:36] 32613  	at groovy.lang.Closure.call(Closure.java:394)
+[05-30-19 02:37:36] 32613  	at groovy.lang.Closure.call(Closure.java:389)
+[05-30-19 02:37:36] 32613  	at groovy.lang.Closure.run(Closure.java:472)
+[05-30-19 02:37:36] 32613  	at java.lang.Thread.run(Thread.java:785)
+[05-30-19 02:37:36] 32613 mgen.publisher.ExceptionHandler | null
+[05-30-19 02:37:36] 32613 mgen.publisher.ExceptionHandler | <b>***** END EXCEPTION IN MGEN PUBLISHER *****</b>
+[05-30-19 02:37:36] 32613 mgen.Step      | instantiating Step class mgen.steps.compass.CompassCliMode
+[05-30-19 02:37:36] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property rack (class java.lang.String) from 8564-F02 78E497G (class org.codehaus.groovy.runtime.GStringImpl)
+[05-30-19 02:37:36] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property description (class java.lang.String) from Verifying that the compass switch is in ibmn-os mode (class java.lang.String)
+[05-30-19 02:37:36] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property chassis (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:36] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property bay (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:36] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property label (class java.lang.String) from Verifying Compass Cli Mode (class java.lang.String)
+[05-30-19 02:37:36] 32613 mgen.steps.compass.CompassCliMode | updateProperties after prompting user: sourceses: [:]
+[05-30-19 02:37:36] 32613 mgen.steps.compass.CompassCliMode | execute Configuring Compass in chassis 2, bay 2
+[05-30-19 02:37:36] 32613 mgen.steps.compass.CompassCliMode | execute Establishing generic connection to Compass in chassis 2, bay 2
+[05-30-19 02:37:36] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:37:36] 32613 mgen.hardware  | case = regex
+[05-30-19 02:37:36] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:37:36] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:37:36] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:37:36] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, hwClass=class network.CompassGeneric, extraInfo={hwClass=null}, chassis=2, compNum=2}
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:37:36] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli]
+[05-30-19 02:37:36] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:37:36] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:36] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:37:37] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:37:37] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:37:37] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:37:37] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@f02c32ea
+[05-30-19 02:37:37] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:37:37] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:37] 32613 network.CompassGeneric | Determining the current mode of the cli
+[05-30-19 02:37:43] 32613 network.CompassGeneric | Current mode of the Compass cli is iscli
+[05-30-19 02:37:43] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:43] 32613 mgen.steps.compass.CompassCliMode | execute Compass cli mode is currently set to iscli
+[05-30-19 02:37:43] 32613 mgen.Step      | instantiating Step class mgen.steps.compass.CompassInfo
+[05-30-19 02:37:43] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property rack (class java.lang.String) from 8564-F02 78E497G (class org.codehaus.groovy.runtime.GStringImpl)
+[05-30-19 02:37:43] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property description (class java.lang.String) from Retrieving information about the compass switch (class java.lang.String)
+[05-30-19 02:37:43] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property chassis (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:43] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property label (class java.lang.String) from Initial Compass information retrieval (class java.lang.String)
+[05-30-19 02:37:43] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property bay (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:43] 32613 mgen.steps.compass.CompassInfo | updateProperties after prompting user: sourceses: [:]
+[05-30-19 02:37:43] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:37:43] 32613 mgen.hardware  | case = regex
+[05-30-19 02:37:43] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:37:43] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:37:43] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:37:43] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null}, chassis=2, compNum=2}
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:37:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli]
+[05-30-19 02:37:43] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:37:43] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:43] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:37:44] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:37:44] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:37:44] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:37:44] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@84fd7e49
+[05-30-19 02:37:44] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:37:44] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:44] 32613 mgen.steps.compass.CompassInfo$_execute_closure1 | execute Retrieving information about the Compass
+[05-30-19 02:37:44] 32613 network.BNTIscli | Start collecting system information
+[05-30-19 02:37:44] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:37:44] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:37:44] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:37:44] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:37:44] 32613 network.BNTIscli | Entering setClimode: Going from mode user to priv
+[05-30-19 02:37:44] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:37:44] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:37:44] 32613 utils.CliConnection | CLI command: >>show sys-info<<
+[05-30-19 02:37:45] 32613 utils.CliConnection | CLI result:
+System Information at 13:50:52 Sun Jan  1, 2000
+Time zone: No timezone configured
+Daylight Savings Time Status: Disabled
+
+Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+
+Switch has been up for 0 days, 0 hours, 4 minutes and 55 seconds.
+Last boot: (Power Controller, Software reset)
+
+MAC address: a4:8c:db:c7:5b:00    IP (If 1) address: 0.0.0.0
+Internal Management Port MAC Address: a4:8c:db:c7:5b:ef
+Internal Management Port IP Address (if 128): 192.168.70.121
+External Management Port MAC Address: a4:8c:db:c7:5b:fe
+External Management Port IP Address (if 127): 
+
+Software Version 8.4.6 (FLASH image2), active configuration.
+Boot kernel version 8.4.6
+
+
+
+Chassis MTM                 : 8721HC2
+Chassis Serial Num          : J11KTBE
+Hardware Part Number        : 00VX203     
+Hardware Revision           : 00
+Serial Number               : Y014CM75XC02
+Manufacturing Date (WWYY)   : 2217
+PCBA Part Number            : 00D6166     
+PCBA Revision               : 0
+PCBA Number                 : 00
+Board Revision              : 00
+PLD Firmware Version        : 1.7
+
+Temperature Warning         : 37 C (Warning  at 66 C / Recover at 61 C)
+Temperature Shutdown        : 38 C (Shutdown at 72 C / Recover at 67 C)
+Temperature Inlet           : 32 C
+Temperature Exhaust         : 38 C
+Temperature Asic Max        : 41 C (Warning at 100 C / Shutdown at 108 C)
+
+Power Consumption           : 49.150 W (12.536 V   3.889 A)
+
+
+Switch is in I/O Module Bay 2
+
+Router#
+[05-30-19 02:37:45] 32613 network.BNTIscli | sysDisplay: System Information at 13:50:52 Sun Jan  1, 2000
+Time zone: No timezone configured
+Daylight Savings Time Status: Disabled
+
+Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+
+Switch has been up for 0 days, 0 hours, 4 minutes and 55 seconds.
+Last boot: (Power Controller, Software reset)
+
+MAC address: a4:8c:db:c7:5b:00    IP (If 1) address: 0.0.0.0
+Internal Management Port MAC Address: a4:8c:db:c7:5b:ef
+Internal Management Port IP Address (if 128): 192.168.70.121
+External Management Port MAC Address: a4:8c:db:c7:5b:fe
+External Management Port IP Address (if 127): 
+
+Software Version 8.4.6 (FLASH image2), active configuration.
+Boot kernel version 8.4.6
+
+
+
+Chassis MTM                 : 8721HC2
+Chassis Serial Num          : J11KTBE
+Hardware Part Number        : 00VX203     
+Hardware Revision           : 00
+Serial Number               : Y014CM75XC02
+Manufacturing Date (WWYY)   : 2217
+PCBA Part Number            : 00D6166     
+PCBA Revision               : 0
+PCBA Number                 : 00
+Board Revision              : 00
+PLD Firmware Version        : 1.7
+
+Temperature Warning         : 37 C (Warning  at 66 C / Recover at 61 C)
+Temperature Shutdown        : 38 C (Shutdown at 72 C / Recover at 67 C)
+Temperature Inlet           : 32 C
+Temperature Exhaust         : 38 C
+Temperature Asic Max        : 41 C (Warning at 100 C / Shutdown at 108 C)
+
+Power Consumption           : 49.150 W (12.536 V   3.889 A)
+
+
+Switch is in I/O Module Bay 2
+
+
+[05-30-19 02:37:45] 32613 network.BNTIscli | Value :13:50:52 Sun Jan  1, 2000 field[1] time
+[05-30-19 02:37:45] 32613 network.BNTIscli | Value :8.4.6 (FLASH image2), active configuration. field[1] softver
+[05-30-19 02:37:45] 32613 network.BNTIscli | Value :a4:8c:db:c7:5b:00 field[1] macAddr
+[05-30-19 02:37:45] 32613 network.BNTIscli | Retrieving the boot version on the switch
+[05-30-19 02:37:45] 32613 network.BNTIscli | Entering setClimode: Going from mode priv to priv
+[05-30-19 02:37:45] 32613 utils.CliConnection | CLI command: >>show boot<<
+[05-30-19 02:37:45] 32613 utils.CliConnection | CLI result:
+Current running image version: 8.4.6
+Currently set to boot software image2, active config block.
+NetBoot: disabled, NetBoot tftp server:  , NetBoot cfgfile: 
+Current boot Openflow protocol version: 1.0
+Currently profile is default, set to boot with default profile next time.
+Current FLASH software:
+  image1: version 8.4.6, downloaded 03:23:52 Sun Jan  1, 2000
+  image2: version 8.4.6, downloaded 03:27:18 Sun Jan  1, 2000
+  boot kernel: version 8.4.6
+  bootloader : version 8.4.6
+Currently scheduled reboot time: none
+
+Router#
+[05-30-19 02:37:45] 32613 network.BNTIscli | Entering verifySwitchType: G8272
+[05-30-19 02:37:45] 32613 utils.CliConnection | CLI command: >>show version<<
+[05-30-19 02:37:45] 32613 utils.CliConnection | CLI result:
+System Information at 13:50:52 Sun Jan  1, 2000
+Time zone: No timezone configured
+Daylight Savings Time Status: Disabled
+
+Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+
+Switch has been up for 0 days, 0 hours, 4 minutes and 56 seconds.
+Last boot: (Power Controller, Software reset)
+
+MAC address: a4:8c:db:c7:5b:00    IP (If 1) address: 0.0.0.0
+Internal Management Port MAC Address: a4:8c:db:c7:5b:ef
+Internal Management Port IP Address (if 128): 192.168.70.121
+External Management Port MAC Address: a4:8c:db:c7:5b:fe
+External Management Port IP Address (if 127): 
+
+Software Version 8.4.6 (FLASH image2), active configuration.
+Boot kernel version 8.4.6
+
+
+
+Chassis MTM                 : 8721HC2
+Chassis Serial Num          : J11KTBE
+Hardware Part Number        : 00VX203     
+Hardware Revision           : 00
+Serial Number               : Y014CM75XC02
+Manufacturing Date (WWYY)   : 2217
+PCBA Part Number            : 00D6166     
+PCBA Revision               : 0
+PCBA Number                 : 00
+Board Revision              : 00
+PLD Firmware Version        : 1.7
+
+Temperature Warning         : 37 C (Warning  at 66 C / Recover at 61 C)
+Temperature Shutdown        : 38 C (Shutdown at 72 C / Recover at 67 C)
+Temperature Inlet           : 32 C
+Temperature Exhaust         : 38 C
+Temperature Asic Max        : 40 C (Warning at 100 C / Shutdown at 108 C)
+
+Power Consumption           : 49.150 W (12.536 V   3.918 A)
+
+
+Switch is in I/O Module Bay 2
+
+Router#
+[05-30-19 02:37:45] 32613 network.BNTIscli | found nameModel: Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+[05-30-19 02:37:45] 32613 network.BNTIscli | Entering verifySwitchType:  EN4093 
+[05-30-19 02:37:45] 32613 utils.CliConnection | CLI command: >>show version<<
+[05-30-19 02:37:46] 32613 utils.CliConnection | CLI result:
+System Information at 13:50:52 Sun Jan  1, 2000
+Time zone: No timezone configured
+Daylight Savings Time Status: Disabled
+
+Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+
+Switch has been up for 0 days, 0 hours, 4 minutes and 56 seconds.
+Last boot: (Power Controller, Software reset)
+
+MAC address: a4:8c:db:c7:5b:00    IP (If 1) address: 0.0.0.0
+Internal Management Port MAC Address: a4:8c:db:c7:5b:ef
+Internal Management Port IP Address (if 128): 192.168.70.121
+External Management Port MAC Address: a4:8c:db:c7:5b:fe
+External Management Port IP Address (if 127): 
+
+Software Version 8.4.6 (FLASH image2), active configuration.
+Boot kernel version 8.4.6
+
+
+
+Chassis MTM                 : 8721HC2
+Chassis Serial Num          : J11KTBE
+Hardware Part Number        : 00VX203     
+Hardware Revision           : 00
+Serial Number               : Y014CM75XC02
+Manufacturing Date (WWYY)   : 2217
+PCBA Part Number            : 00D6166     
+PCBA Revision               : 0
+PCBA Number                 : 00
+Board Revision              : 00
+PLD Firmware Version        : 1.7
+
+Temperature Warning         : 37 C (Warning  at 66 C / Recover at 61 C)
+Temperature Shutdown        : 38 C (Shutdown at 72 C / Recover at 67 C)
+Temperature Inlet           : 32 C
+Temperature Exhaust         : 38 C
+Temperature Asic Max        : 40 C (Warning at 100 C / Shutdown at 108 C)
+
+Power Consumption           : 48.830 W (12.536 V   3.895 A)
+
+
+Switch is in I/O Module Bay 2
+
+Router#
+[05-30-19 02:37:46] 32613 network.BNTIscli | found nameModel: Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+[05-30-19 02:37:46] 32613 network.BNTIscli | Entering verifySwitchType:  EN4093R 
+[05-30-19 02:37:46] 32613 utils.CliConnection | CLI command: >>show version<<
+[05-30-19 02:37:46] 32613 utils.CliConnection | CLI result:
+System Information at 13:50:53 Sun Jan  1, 2000
+Time zone: No timezone configured
+Daylight Savings Time Status: Disabled
+
+Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+
+Switch has been up for 0 days, 0 hours, 4 minutes and 56 seconds.
+Last boot: (Power Controller, Software reset)
+
+MAC address: a4:8c:db:c7:5b:00    IP (If 1) address: 0.0.0.0
+Internal Management Port MAC Address: a4:8c:db:c7:5b:ef
+Internal Management Port IP Address (if 128): 192.168.70.121
+External Management Port MAC Address: a4:8c:db:c7:5b:fe
+External Management Port IP Address (if 127): 
+
+Software Version 8.4.6 (FLASH image2), active configuration.
+Boot kernel version 8.4.6
+
+
+
+Chassis MTM                 : 8721HC2
+Chassis Serial Num          : J11KTBE
+Hardware Part Number        : 00VX203     
+Hardware Revision           : 00
+Serial Number               : Y014CM75XC02
+Manufacturing Date (WWYY)   : 2217
+PCBA Part Number            : 00D6166     
+PCBA Revision               : 0
+PCBA Number                 : 00
+Board Revision              : 00
+PLD Firmware Version        : 1.7
+
+Temperature Warning         : 37 C (Warning  at 66 C / Recover at 61 C)
+Temperature Shutdown        : 38 C (Shutdown at 72 C / Recover at 67 C)
+Temperature Inlet           : 32 C
+Temperature Exhaust         : 38 C
+Temperature Asic Max        : 40 C (Warning at 100 C / Shutdown at 108 C)
+
+Power Consumption           : 49.120 W (12.536 V   3.918 A)
+
+
+Switch is in I/O Module Bay 2
+
+Router#
+[05-30-19 02:37:46] 32613 network.BNTIscli | found nameModel: Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+[05-30-19 02:37:46] 32613 mgen.steps.compass.CompassInfo$_execute_closure1 | execute Retrieving licenses
+[05-30-19 02:37:46] 32613 network.CompassIscli | Retrieving licenses from compass switch
+[05-30-19 02:37:46] 32613 network.BNTIscli | Entering setClimode: Going from mode priv to priv
+[05-30-19 02:37:46] 32613 utils.CliConnection | CLI command: >>show software-key<<
+[05-30-19 02:37:46] 32613 utils.CliConnection | CLI result:
+Enabled FoD Key(s):
+  Upgrade1
+
+Non-Reusable Demo License(s):
+  none
+
+
+Router#
+[05-30-19 02:37:46] 32613 mgen.steps.compass.CompassInfo$_execute_closure1 | execute Retrieving image versions
+[05-30-19 02:37:46] 32613 network.BNTIscli | Retrieving the image versions
+[05-30-19 02:37:46] 32613 network.BNTIscli | Entering setClimode: Going from mode priv to priv
+[05-30-19 02:37:46] 32613 utils.CliConnection | CLI command: >>show boot<<
+[05-30-19 02:37:46] 32613 utils.CliConnection | CLI result:
+Current running image version: 8.4.6
+Currently set to boot software image2, active config block.
+NetBoot: disabled, NetBoot tftp server:  , NetBoot cfgfile: 
+Current boot Openflow protocol version: 1.0
+Currently profile is default, set to boot with default profile next time.
+Current FLASH software:
+  image1: version 8.4.6, downloaded 03:23:52 Sun Jan  1, 2000
+  image2: version 8.4.6, downloaded 03:27:18 Sun Jan  1, 2000
+  boot kernel: version 8.4.6
+  bootloader : version 8.4.6
+Currently scheduled reboot time: none
+
+Router#
+[05-30-19 02:37:46] 32613 mgen.steps.compass.CompassInfo$_execute_closure1 | execute Retrieving boot versions
+[05-30-19 02:37:46] 32613 network.BNTIscli | Retrieving the boot version on the switch
+[05-30-19 02:37:46] 32613 network.BNTIscli | Entering setClimode: Going from mode priv to priv
+[05-30-19 02:37:46] 32613 utils.CliConnection | CLI command: >>show boot<<
+[05-30-19 02:37:46] 32613 utils.CliConnection | CLI result:
+Current running image version: 8.4.6
+Currently set to boot software image2, active config block.
+NetBoot: disabled, NetBoot tftp server:  , NetBoot cfgfile: 
+Current boot Openflow protocol version: 1.0
+Currently profile is default, set to boot with default profile next time.
+Current FLASH software:
+  image1: version 8.4.6, downloaded 03:23:52 Sun Jan  1, 2000
+  image2: version 8.4.6, downloaded 03:27:18 Sun Jan  1, 2000
+  boot kernel: version 8.4.6
+  bootloader : version 8.4.6
+Currently scheduled reboot time: none
+
+Router#
+[05-30-19 02:37:46] 32613 mgen.steps.compass.CompassInfo$_execute_closure1 | execute Retrieved the following information about the Compass:
+[bay:2, type:switch, state:Enabled, c:static, i:192.168.70.121, s:255.255.255.0, g:0.0.0.0, pm:disabled, em:disabled, ep:enabled, pip:enabled, ipv6:enabled, ipv6static:enabled, i6:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, p6:64, g6:::, ipv6_addr_in_use:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, dhcp6:disabled, sa6:disabled, link_local_addr_in_use:fe80::a68c:dbff:fec7:5bef, powerstate:On, switchNum:2, manufacturer:LNVO (Not Available), manufacturerID:19046, productID:1029, typeModel:Not Available, serialNum:Not Available, hardwareRev:0.0, manufDate:2217, partNo:00VX203, fruNo:00VX205, fruSerialNo:Y014CM75XC02, clei:Not Available, macAddr:a4:8c:db:c7:5b:00, bootRomRelDate:10/03/2017, productName:Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch, deviceDesc:EN4093R 10Gb Ethernet Switch, time:13:50:52 Sun Jan  1, 2000, softver:8.4.6, serial:Y014CM75XC02, boot_version:8.4.6, name:Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1), model:EN4093R, switch_type:chassis_network_switch, licenses:[enabled:Upgrade1], images:[image1:8.4.6, image2:8.4.6], bootversion:8.4.6]
+[05-30-19 02:37:46] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:46] 32613 mgen.Step      | instantiating Step class mgen.steps.compass.CompassOSImg
+[05-30-19 02:37:46] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property rack (class java.lang.String) from 8564-F02 78E497G (class org.codehaus.groovy.runtime.GStringImpl)
+[05-30-19 02:37:46] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property description (class java.lang.String) from Applying OS image to the compass switch to the latest version if needed (class java.lang.String)
+[05-30-19 02:37:46] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property chassis (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:46] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property label (class java.lang.String) from Compass OS Image (class java.lang.String)
+[05-30-19 02:37:46] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property bay (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:46] 32613 mgen.steps.compass.CompassOSImg | updateProperties after prompting user: sourceses: [:]
+[05-30-19 02:37:46] 32613 mgen.steps.compass.CompassOSImg | execute Establishing connection to Compass in chassis 2, bay 2
+[05-30-19 02:37:46] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:37:46] 32613 mgen.hardware  | case = regex
+[05-30-19 02:37:46] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:37:46] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:37:46] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:37:46] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null, firmware=null, firmwareDir=null}, chassis=2, compNum=2}
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key firmware
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key firmwareDir
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][firmwareDir]: /data/maintenance/firmware/pureapp-2.2.5.0-20180330/en4093
+[05-30-19 02:37:46] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli, firmwareDir:/data/maintenance/firmware/pureapp-2.2.5.0-20180330/en4093]
+[05-30-19 02:37:46] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:37:46] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:46] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:37:47] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:37:47] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:37:47] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:37:47] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@8f28168e
+[05-30-19 02:37:47] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:37:47] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:47] 32613 network.BNTIscli | Retrieving the image versions
+[05-30-19 02:37:47] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:37:47] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:37:47] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:37:48] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:37:48] 32613 network.BNTIscli | Entering setClimode: Going from mode user to priv
+[05-30-19 02:37:48] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:37:48] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:37:48] 32613 utils.CliConnection | CLI command: >>show boot<<
+[05-30-19 02:37:48] 32613 utils.CliConnection | CLI result:
+Current running image version: 8.4.6
+Currently set to boot software image2, active config block.
+NetBoot: disabled, NetBoot tftp server:  , NetBoot cfgfile: 
+Current boot Openflow protocol version: 1.0
+Currently profile is default, set to boot with default profile next time.
+Current FLASH software:
+  image1: version 8.4.6, downloaded 03:23:52 Sun Jan  1, 2000
+  image2: version 8.4.6, downloaded 03:27:18 Sun Jan  1, 2000
+  boot kernel: version 8.4.6
+  bootloader : version 8.4.6
+Currently scheduled reboot time: none
+
+Router#
+[05-30-19 02:37:48] 32613 mgen.steps.compass.CompassOSImg$_execute_closure2 | execute The current OS images versions that are on the Compass are [image1:8.4.6, image2:8.4.6] and needs to be on 8.4.6
+[05-30-19 02:37:48] 32613 mgen.steps.compass.CompassOSImg$_execute_closure2_closure4 | execute OS image image1 currently has 8.4.6
+[05-30-19 02:37:48] 32613 mgen.steps.compass.CompassOSImg$_execute_closure2_closure4 | execute OS image image2 currently has 8.4.6
+[05-30-19 02:37:48] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:53] 32613 mgen.Step      | instantiating Step class mgen.steps.compass.CompassBootImg
+[05-30-19 02:37:53] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property rack (class java.lang.String) from 8564-F02 78E497G (class org.codehaus.groovy.runtime.GStringImpl)
+[05-30-19 02:37:53] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property description (class java.lang.String) from Applying Boot image to the compass switch to the latest version if needed (class java.lang.String)
+[05-30-19 02:37:53] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property chassis (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:53] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property label (class java.lang.String) from Compass Boot Image (class java.lang.String)
+[05-30-19 02:37:53] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property bay (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:53] 32613 mgen.steps.compass.CompassBootImg | updateProperties after prompting user: sourceses: [:]
+[05-30-19 02:37:53] 32613 mgen.steps.compass.CompassBootImg | execute Establishing connection to Compass in chassis 2, bay 2
+[05-30-19 02:37:53] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:37:53] 32613 mgen.hardware  | case = regex
+[05-30-19 02:37:53] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:37:53] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:37:53] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:37:53] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null, firmware=null, firmwareDir=null}, chassis=2, compNum=2}
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key firmware
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key firmwareDir
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][firmwareDir]: /data/maintenance/firmware/pureapp-2.2.5.0-20180330/en4093
+[05-30-19 02:37:53] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli, firmwareDir:/data/maintenance/firmware/pureapp-2.2.5.0-20180330/en4093]
+[05-30-19 02:37:53] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:37:53] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:53] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:37:53] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:37:53] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:37:53] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:37:53] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@77ad5e78
+[05-30-19 02:37:53] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:37:53] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:53] 32613 network.BNTIscli | Retrieving the boot version on the switch
+[05-30-19 02:37:53] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:37:54] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:37:54] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:37:54] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:37:54] 32613 network.BNTIscli | Entering setClimode: Going from mode user to priv
+[05-30-19 02:37:54] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:37:54] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:37:54] 32613 utils.CliConnection | CLI command: >>show boot<<
+[05-30-19 02:37:54] 32613 utils.CliConnection | CLI result:
+Current running image version: 8.4.6
+Currently set to boot software image2, active config block.
+NetBoot: disabled, NetBoot tftp server:  , NetBoot cfgfile: 
+Current boot Openflow protocol version: 1.0
+Currently profile is default, set to boot with default profile next time.
+Current FLASH software:
+  image1: version 8.4.6, downloaded 03:23:52 Sun Jan  1, 2000
+  image2: version 8.4.6, downloaded 03:27:18 Sun Jan  1, 2000
+  boot kernel: version 8.4.6
+  bootloader : version 8.4.6
+Currently scheduled reboot time: none
+
+Router#
+[05-30-19 02:37:54] 32613 mgen.steps.compass.CompassBootImg$_execute_closure2 | execute The current boot image version that is on the Compass is 8.4.6 and needs to be on 8.4.6
+[05-30-19 02:37:54] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:37:59] 32613 mgen.Step      | instantiating Step class mgen.steps.compass.CompassReset
+[05-30-19 02:37:59] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property rack (class java.lang.String) from 8564-F02 78E497G (class org.codehaus.groovy.runtime.GStringImpl)
+[05-30-19 02:37:59] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property description (class java.lang.String) from Resetting the compass switch if a new OS or Boot image has been applied (class java.lang.String)
+[05-30-19 02:37:59] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property chassis (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:59] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property bay (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:59] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property label (class java.lang.String) from Verifying Compass needs to be reset (class java.lang.String)
+[05-30-19 02:37:59] 32613 mgen.steps.compass.CompassReset | updateProperties after prompting user: sourceses: [:]
+[05-30-19 02:37:59] 32613 mgen.steps.compass.CompassReset | execute checking if compass in chassis 2, bay 2 needs to be reset
+[05-30-19 02:37:59] 32613 mgen.Step      | instantiating Step class mgen.steps.compass.CompassLicenses
+[05-30-19 02:37:59] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property description (class java.lang.String) from Verifying appropriate licenses are on the compass switch (class java.lang.String)
+[05-30-19 02:37:59] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property chassis (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:59] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property label (class java.lang.String) from License Verification (class java.lang.String)
+[05-30-19 02:37:59] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property bay (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:37:59] 32613 mgen.steps.compass.CompassLicenses | updateProperties after prompting user: sourceses: [:]
+[05-30-19 02:37:59] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:37:59] 32613 mgen.hardware  | case = regex
+[05-30-19 02:37:59] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:37:59] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:37:59] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:37:59] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null}, chassis=2, compNum=2}
+[05-30-19 02:37:59] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:59] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:37:59] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:37:59] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:38:00] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:38:00] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:38:00] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:38:00] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:38:00] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:38:00] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:38:00] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli]
+[05-30-19 02:38:00] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:38:00] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:00] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:38:00] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:38:00] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:38:00] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:38:00] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@70995a63
+[05-30-19 02:38:00] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:38:00] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:00] 32613 mgen.steps.compass.CompassLicenses$_execute_closure1 | execute 8564-F02 78E497G Chassis 2 Compass bay 2: Verifying licenses
+[05-30-19 02:38:00] 32613 network.CompassIscli | Entering verifyLicenses, expectedLicenses: {active=46Port|Upgrade1, enabled=46Port|Upgrade1}
+[05-30-19 02:38:00] 32613 network.CompassIscli | Retrieving licenses from compass switch
+[05-30-19 02:38:00] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:38:00] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:38:01] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:38:01] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:38:01] 32613 network.BNTIscli | Entering setClimode: Going from mode user to priv
+[05-30-19 02:38:01] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:38:01] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:38:01] 32613 utils.CliConnection | CLI command: >>show software-key<<
+[05-30-19 02:38:01] 32613 utils.CliConnection | CLI result:
+Enabled FoD Key(s):
+  Upgrade1
+
+Non-Reusable Demo License(s):
+  none
+
+
+Router#
+[05-30-19 02:38:01] 32613 network.CompassIscli | Retrieved the following licenses from the compass switch: {enabled=Upgrade1}
+[05-30-19 02:38:01] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:01] 32613 mgen.steps.compass.CompassLicenses | execute 8564-F02 78E497G Chassis 2 Compass 2: Licenses are correct
+[05-30-19 02:38:01] 32613 mgen.Step      | instantiating Step class mgen.steps.compass.CompassConfigImg
+[05-30-19 02:38:01] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property rack (class java.lang.String) from 8564-F02 78E497G (class org.codehaus.groovy.runtime.GStringImpl)
+[05-30-19 02:38:01] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property description (class java.lang.String) from Applying Configuration Image to the compass switch (class java.lang.String)
+[05-30-19 02:38:01] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property chassis (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:38:01] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property bay (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:38:01] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property label (class java.lang.String) from Applying Configuration Image (class java.lang.String)
+[05-30-19 02:38:01] 32613 mgen.steps.compass.CompassConfigImg | updateProperties after prompting user: sourceses: [:]
+[05-30-19 02:38:01] 32613 mgen.steps.compass.CompassConfigImg | execute Establishing connection to Compass in chassis 2, bay 2
+[05-30-19 02:38:01] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:38:01] 32613 mgen.hardware  | case = regex
+[05-30-19 02:38:01] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:38:01] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:38:01] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:38:01] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null, firmware=null, firmwareDir=null}, chassis=2, compNum=2}
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key firmware
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key firmwareDir
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][firmwareDir]: /data/maintenance/firmware/pureapp-2.2.5.0-20180330/en4093
+[05-30-19 02:38:01] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli, firmwareDir:/data/maintenance/firmware/pureapp-2.2.5.0-20180330/en4093]
+[05-30-19 02:38:01] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:38:01] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:01] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:38:02] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:38:02] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:38:02] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:38:02] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@af2d946
+[05-30-19 02:38:02] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:38:02] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:02] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:38:02] 32613 mgen.hardware  | case = regex
+[05-30-19 02:38:02] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:38:02] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:38:02] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:38:02] 32613 mgen.hardware  | case = regex
+[05-30-19 02:38:02] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:38:02] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:38:02] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:38:02] 32613 mgen.hardware  | case = regex
+[05-30-19 02:38:02] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:38:02] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:38:02] 32613 mgen.steps.compass.CompassConfigImg$_execute_closure2 | execute Applying configuration file to compass /data/maintenance/firmware/pureapp-2.2.5.0-20180330/en4093/8564-compass-ch2-sw2-x-mfg.config
+[05-30-19 02:38:02] 32613 network.BNTIscli | Downloading running-config from server fd8c:215d:178e:c0de:f2de:f1ff:fede:6c3e filename _text7759194986915207682.ftp
+[05-30-19 02:38:02] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:38:02] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:38:02] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:38:02] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:38:02] 32613 network.BNTIscli | Entering setClimode: Going from mode user to priv
+[05-30-19 02:38:02] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:38:02] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:38:11] 32613 network.BNTIscli | Entering address fd8c:215d:178e:c0de:f2de:f1ff:fede:6c3e of server to download image
+[05-30-19 02:38:16] 32613 network.BNTIscli | Entering filename _text7759194986915207682.ftp
+[05-30-19 02:38:23] 32613 network.BNTIscli | Monitoring the transfer status, timeout set to 300000
+[05-30-19 02:38:28] 32613 network.BNTIscli | Output from transfer status: _text7759194986915207682.ftp
+Start transfer ........................................................
+Loading to current configuration.
+......
+Apply to current configuration.
+Successfully downloaded _text7759194986915207682.ftp from fd8c:215d:178e:c0de:f2de:f1ff:fede:6c3e.
+
+Router#
+[05-30-19 02:38:31] 32613 utils.CliConnection | CLI command: >>write<<
+[05-30-19 02:38:33] 32613 utils.CliConnection | CLI result:
+
+Copy running configuration to startup configuration
+
+Router#
+[05-30-19 02:38:33] 32613 mgen.steps.compass.CompassConfigImg$_execute_closure2 | execute Saving configuration to Compass
+[05-30-19 02:38:33] 32613 network.BNTIscli | Saving switch configuration
+[05-30-19 02:38:36] 32613 network.BNTIscli | Retrieving the current config block the switch is using
+[05-30-19 02:38:36] 32613 network.BNTIscli | Entering setClimode: Going from mode priv to priv
+[05-30-19 02:38:36] 32613 utils.CliConnection | CLI command: >>show boot<<
+[05-30-19 02:38:37] 32613 utils.CliConnection | CLI result:
+Current running image version: 8.4.6
+Currently set to boot software image2, active config block.
+NetBoot: disabled, NetBoot tftp server:  , NetBoot cfgfile: 
+Current boot Openflow protocol version: 1.0
+Currently profile is default, set to boot with default profile next time.
+Current FLASH software:
+  image1: version 8.4.6, downloaded 03:23:52 Sun Jan  1, 2000
+  image2: version 8.4.6, downloaded 03:27:18 Sun Jan  1, 2000
+  boot kernel: version 8.4.6
+  bootloader : version 8.4.6
+Currently scheduled reboot time: none
+
+Router#
+[05-30-19 02:38:37] 32613 mgen.steps.compass.CompassConfigImg$_execute_closure2 | execute The current configuration block on the compass switch is set to active
+[05-30-19 02:38:37] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:42] 32613 mgen.Step      | instantiating Step class mgen.steps.compass.CompassUsers
+[05-30-19 02:38:42] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property rack (class java.lang.String) from 8564-F02 78E497G (class org.codehaus.groovy.runtime.GStringImpl)
+[05-30-19 02:38:42] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property description (class java.lang.String) from user and password setup (class java.lang.String)
+[05-30-19 02:38:42] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property chassis (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:38:42] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property bay (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:38:42] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property label (class java.lang.String) from Creating Users/passwords (class java.lang.String)
+[05-30-19 02:38:42] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property user_config (class java.lang.String) from users (class java.lang.String)
+[05-30-19 02:38:42] 32613 mgen.steps.compass.CompassUsers | updateProperties after prompting user: sourceses: [:]
+[05-30-19 02:38:42] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:38:42] 32613 mgen.hardware  | case = regex
+[05-30-19 02:38:42] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:38:42] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:38:42] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:38:42] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null}, chassis=2, compNum=2}
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:38:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli]
+[05-30-19 02:38:42] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:38:42] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:42] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:38:42] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:38:42] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:38:42] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:38:42] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@c94a076c
+[05-30-19 02:38:42] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:38:42] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:42] 32613 network.BNTIscli | Entering getConfUsers
+[05-30-19 02:38:42] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:38:43] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:38:43] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:38:43] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:38:43] 32613 network.BNTIscli | Entering setClimode: Going from mode user to priv
+[05-30-19 02:38:43] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:38:43] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:38:43] 32613 utils.CliConnection | CLI command: >>show access user<<
+[05-30-19 02:38:43] 32613 utils.CliConnection | CLI result:
+
+Usernames:
+  user     - disabled   - offline   
+  oper     - disabled   - offline   
+  admin    - enabled    - online     1 session.
+Current User ID table:
+  1: name USERID  , ena, cos admin   , password valid, offline
+
+Current strong password settings:
+  strong password status: disabled
+Router#
+[05-30-19 02:38:43] 32613 network.BNTIscli | getConfUsers output: 
+Usernames:
+  user     - disabled   - offline   
+  oper     - disabled   - offline   
+  admin    - enabled    - online     1 session.
+Current User ID table:
+  1: name USERID  , ena, cos admin   , password valid, offline
+
+Current strong password settings:
+  strong password status: disabled
+
+[05-30-19 02:38:43] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:43] 32613 mgen.steps.compass.CompassUsers | execute Current users on compass switch: [[num:1, name:USERID, status:ena, class:admin, pswrdstatus:valid, sessions:offline]]
+[05-30-19 02:38:43] 32613 mgen.steps.compass.CompassUsers | execute Setting up users: [[uid:2, password:generated, cos:admin, name:IPASMGR, status:ena], [uid:3, password:generated, cos:admin, name:CEUSER, status:ena], [uid:1, password:generated, cos:admin, name:USERID, status:ena]] on Compass
+[05-30-19 02:38:43] 32613 mgen.steps.compass.CompassUsers | getUserInfo Looking up user [uid:2, password:yAaOKKq3, cos:admin, name:IPASMGR, status:ena]
+[05-30-19 02:38:43] 32613 mgen.steps.compass.CompassUsers$_execute_closure4 | execute Creating user IPASMGR
+[05-30-19 02:38:43] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:38:43] 32613 mgen.hardware  | case = regex
+[05-30-19 02:38:43] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:38:43] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:38:43] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:38:43] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null}, chassis=2, compNum=2}
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:38:43] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli]
+[05-30-19 02:38:43] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:38:43] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:43] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:38:44] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:38:44] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:38:44] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:38:44] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@2539682f
+[05-30-19 02:38:44] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:38:44] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:38:44] 32613 network.BNTIscli | Setting user configuration to uid 2
+[05-30-19 02:38:44] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:38:44] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:38:44] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:38:44] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:38:44] 32613 network.BNTIscli | Entering setClimode: Going from mode user to glbl
+[05-30-19 02:38:44] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:38:45] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:38:45] 32613 utils.CliConnection | CLI command: >>configure terminal<<
+[05-30-19 02:38:45] 32613 utils.CliConnection | CLI result:
+Enter configuration commands, one per line.  End with Ctrl/Z.
+Router(config)#
+[05-30-19 02:38:45] 32613 network.BNTIscli | Setting class of service for user
+[05-30-19 02:38:45] 32613 utils.CliConnection | CLI command: >>access user 2 level admin<<
+[05-30-19 02:38:46] 32613 utils.CliConnection | CLI result:
+Router(config)#
+[05-30-19 02:38:46] 32613 network.BNTIscli | Setting the username name to value IPASMGR
+[05-30-19 02:38:46] 32613 utils.CliConnection | CLI command: >>access user 2 name IPASMGR<<
+[05-30-19 02:38:46] 32613 utils.CliConnection | CLI result:
+Router(config)#
+[05-30-19 02:38:46] 32613 network.BNTIscli | Setting the password
+[05-30-19 02:38:52] 32613 network.BNTIscli | Entering admin password
+[05-30-19 02:38:54] 32613 network.BNTIscli | Entering password for user
+[05-30-19 02:38:56] 32613 network.BNTIscli | Re-entering password for user
+[05-30-19 02:38:59] 32613 network.BNTIscli | Verifying password has been accepted
+[05-30-19 02:38:59] 32613 network.BNTIscli | Entering setClimode: Going from mode glbl to glbl
+[05-30-19 02:38:59] 32613 network.BNTIscli | Setting the status to ena
+[05-30-19 02:38:59] 32613 utils.CliConnection | CLI command: >>access user 2 enable<<
+[05-30-19 02:39:00] 32613 utils.CliConnection | CLI result:
+Router(config)#
+[05-30-19 02:39:00] 32613 network.BNTIscli | Saving switch configuration
+[05-30-19 02:39:04] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:04] 32613 mgen.steps.compass.CompassUsers$_execute_closure4 | execute No user list has been created.  Creating user list and adding user IPASMGR
+[05-30-19 02:39:04] 32613 mgen.steps.compass.CompassUsers | getUserInfo Looking up user [uid:3, password:wQqbPEN0, cos:admin, name:CEUSER, status:ena]
+[05-30-19 02:39:04] 32613 mgen.steps.compass.CompassUsers | getUserInfo Found match at index -1
+[05-30-19 02:39:04] 32613 mgen.steps.compass.CompassUsers$_execute_closure4 | execute Creating user CEUSER
+[05-30-19 02:39:04] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:39:04] 32613 mgen.hardware  | case = regex
+[05-30-19 02:39:04] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:39:04] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:39:04] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:39:04] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null}, chassis=2, compNum=2}
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:39:04] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli]
+[05-30-19 02:39:04] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:39:04] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:04] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:39:05] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:39:05] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:39:05] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:39:05] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@a5163a95
+[05-30-19 02:39:05] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:39:05] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:05] 32613 network.BNTIscli | Setting user configuration to uid 3
+[05-30-19 02:39:05] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:39:05] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:39:05] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:39:05] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:39:05] 32613 network.BNTIscli | Entering setClimode: Going from mode user to glbl
+[05-30-19 02:39:05] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:39:05] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:39:05] 32613 utils.CliConnection | CLI command: >>configure terminal<<
+[05-30-19 02:39:06] 32613 utils.CliConnection | CLI result:
+Enter configuration commands, one per line.  End with Ctrl/Z.
+Router(config)#
+[05-30-19 02:39:06] 32613 network.BNTIscli | Setting class of service for user
+[05-30-19 02:39:06] 32613 utils.CliConnection | CLI command: >>access user 3 level admin<<
+[05-30-19 02:39:06] 32613 utils.CliConnection | CLI result:
+Router(config)#
+[05-30-19 02:39:06] 32613 network.BNTIscli | Setting the username name to value CEUSER
+[05-30-19 02:39:06] 32613 utils.CliConnection | CLI command: >>access user 3 name CEUSER<<
+[05-30-19 02:39:07] 32613 utils.CliConnection | CLI result:
+Router(config)#
+[05-30-19 02:39:07] 32613 network.BNTIscli | Setting the password
+[05-30-19 02:39:12] 32613 network.BNTIscli | Entering admin password
+[05-30-19 02:39:15] 32613 network.BNTIscli | Entering password for user
+[05-30-19 02:39:18] 32613 network.BNTIscli | Re-entering password for user
+[05-30-19 02:39:21] 32613 network.BNTIscli | Verifying password has been accepted
+[05-30-19 02:39:21] 32613 network.BNTIscli | Entering setClimode: Going from mode glbl to glbl
+[05-30-19 02:39:21] 32613 network.BNTIscli | Setting the status to ena
+[05-30-19 02:39:21] 32613 utils.CliConnection | CLI command: >>access user 3 enable<<
+[05-30-19 02:39:22] 32613 utils.CliConnection | CLI result:
+Router(config)#
+[05-30-19 02:39:22] 32613 network.BNTIscli | Saving switch configuration
+[05-30-19 02:39:26] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:26] 32613 mgen.steps.compass.CompassUsers$_execute_closure4 | execute Adding user CEUSER to user list
+[05-30-19 02:39:26] 32613 mgen.steps.compass.CompassUsers | getUserInfo Looking up user [uid:1, password:uasPWk09, cos:admin, name:USERID, status:ena]
+[05-30-19 02:39:26] 32613 mgen.steps.compass.CompassUsers | getUserInfo Found match at index -1
+[05-30-19 02:39:26] 32613 mgen.steps.compass.CompassUsers$_execute_closure4 | execute USERID already exists on the compass
+[05-30-19 02:39:26] 32613 mgen.steps.compass.CompassUsers$_execute_closure4 | execute Stored user information: null
+[05-30-19 02:39:26] 32613 mgen.steps.compass.CompassUsers$_execute_closure4 | execute Changing user USERID password to uasPWk09
+[05-30-19 02:39:26] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:39:26] 32613 mgen.hardware  | case = regex
+[05-30-19 02:39:26] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:39:26] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:39:26] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:39:26] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null}, chassis=2, compNum=2}
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:39:26] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli]
+[05-30-19 02:39:26] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:39:26] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:26] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:39:27] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:39:27] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:39:27] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:39:27] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@582e9326
+[05-30-19 02:39:27] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:39:27] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:27] 32613 network.BNTIscli | Changing password for user: {uid=1, password=***, cos=admin, name=USERID, status=ena}
+[05-30-19 02:39:27] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:39:27] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:39:27] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:39:27] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:39:27] 32613 network.BNTIscli | Entering setClimode: Going from mode user to glbl
+[05-30-19 02:39:27] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:39:27] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:39:27] 32613 utils.CliConnection | CLI command: >>configure terminal<<
+[05-30-19 02:39:28] 32613 utils.CliConnection | CLI result:
+Enter configuration commands, one per line.  End with Ctrl/Z.
+Router(config)#
+[05-30-19 02:39:30] 32613 network.BNTIscli | Enter admin password
+[05-30-19 02:39:32] 32613 network.BNTIscli | Enter user password
+[05-30-19 02:39:34] 32613 network.BNTIscli | Re-enter admin password
+[05-30-19 02:39:37] 32613 network.BNTIscli | Entering setClimode: Going from mode glbl to glbl
+[05-30-19 02:39:37] 32613 network.BNTIscli | Setting the status to ena
+[05-30-19 02:39:37] 32613 utils.CliConnection | CLI command: >>access user 1 enable<<
+[05-30-19 02:39:37] 32613 utils.CliConnection | CLI result:
+Router(config)#
+[05-30-19 02:39:37] 32613 network.BNTIscli | Saving switch configuration
+[05-30-19 02:39:42] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:42] 32613 mgen.steps.compass.CompassUsers$_execute_closure4 | execute Enabling user: USERID
+[05-30-19 02:39:42] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:39:42] 32613 mgen.hardware  | case = regex
+[05-30-19 02:39:42] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:39:42] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:39:42] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:39:42] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null}, chassis=2, compNum=2}
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:39:42] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli]
+[05-30-19 02:39:42] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***}
+[05-30-19 02:39:42] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:42] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:39:43] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:39:43] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:39:43] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:39:43] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@fb6c8ebe
+[05-30-19 02:39:43] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:39:43] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:43] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:39:43] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:39:44] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:39:44] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:39:44] 32613 network.BNTIscli | Entering setClimode: Going from mode user to glbl
+[05-30-19 02:39:44] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:39:44] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:39:44] 32613 utils.CliConnection | CLI command: >>configure terminal<<
+[05-30-19 02:39:44] 32613 utils.CliConnection | CLI result:
+Enter configuration commands, one per line.  End with Ctrl/Z.
+Router(config)#
+[05-30-19 02:39:44] 32613 network.BNTIscli | Setting the status to ena
+[05-30-19 02:39:44] 32613 utils.CliConnection | CLI command: >>access user 1 enable<<
+[05-30-19 02:39:44] 32613 utils.CliConnection | CLI result:
+Router(config)#
+[05-30-19 02:39:44] 32613 network.BNTIscli | Saving switch configuration
+[05-30-19 02:39:48] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:48] 32613 mgen.steps.compass.CompassUsers$_execute_closure4 | execute Adding user USERID to user list
+[05-30-19 02:39:48] 32613 mgen.steps.compass.CompassUsers | execute Finished configuring Compass in chassis 2, bay 2
+[05-30-19 02:39:48] 32613 mgen.Step      | instantiating Step class mgen.steps.compass.CompassQsfp
+[05-30-19 02:39:48] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property description (class java.lang.String) from QSFP port configuration (class java.lang.String)
+[05-30-19 02:39:48] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property chassis (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:39:48] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property bay (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:39:48] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property label (class java.lang.String) from Configuring QSFP Ports (class java.lang.String)
+[05-30-19 02:39:48] 32613 mgen.steps.compass.CompassQsfp | updateProperties after prompting user: sourceses: [:]
+[05-30-19 02:39:48] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:39:48] 32613 mgen.hardware  | case = regex
+[05-30-19 02:39:48] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:39:48] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:39:48] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:39:48] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null, firmware=null, firmwareDir=null}, chassis=2, compNum=2}
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key firmware
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key firmwareDir
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][firmwareDir]: /data/maintenance/firmware/pureapp-2.2.5.0-20180330/en4093
+[05-30-19 02:39:48] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli, firmwareDir:/data/maintenance/firmware/pureapp-2.2.5.0-20180330/en4093]
+[05-30-19 02:39:48] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***, privateKey=***}
+[05-30-19 02:39:48] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:48] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:39:48] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:39:48] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:39:48] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:39:48] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@a18246a5
+[05-30-19 02:39:48] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:39:48] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:48] 32613 mgen.steps.compass.CompassQsfp$_execute_closure1 | execute QSFP port configuration on compass is needed
+[05-30-19 02:39:48] 32613 mgen.steps.compass.CompassQsfp$_execute_closure1 | execute Setting QSFP port configuration
+[05-30-19 02:39:48] 32613 network.BNTIscli | Setting the QSFP ports
+[05-30-19 02:39:48] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:39:48] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:39:49] 32613 network.BNTIscli | Entering setClimode: Going from mode user to glbl
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI command: >>configure terminal<<
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI result:
+Enter configuration commands, one per line.  End with Ctrl/Z.
+Router(config)#
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI command: >>boot qsfp-40Gports EXT15,EXT19<<
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI result:
+Router(config)#
+[05-30-19 02:39:49] 32613 mgen.steps.compass.CompassQsfp$_execute_closure1 | execute Switch will need to reboot to pick up changes.  Setting reboot to true
+[05-30-19 02:39:49] 32613 network.BNTIscli | Retrieving the current config block the switch is using
+[05-30-19 02:39:49] 32613 network.BNTIscli | Entering setClimode: Going from mode glbl to priv
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI command: >>exit<<
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI result:
+Router#
+[05-30-19 02:39:49] 32613 utils.CliConnection | CLI command: >>show boot<<
+[05-30-19 02:39:50] 32613 utils.CliConnection | CLI result:
+Current running image version: 8.4.6
+Currently set to boot software image2, active config block.
+NetBoot: disabled, NetBoot tftp server:  , NetBoot cfgfile: 
+Current boot Openflow protocol version: 1.0
+Currently profile is default, set to boot with default profile next time.
+Current FLASH software:
+  image1: version 8.4.6, downloaded 03:23:52 Sun Jan  1, 2000
+  image2: version 8.4.6, downloaded 03:27:18 Sun Jan  1, 2000
+  boot kernel: version 8.4.6
+  bootloader : version 8.4.6
+Currently scheduled reboot time: none
+
+Router#
+[05-30-19 02:39:50] 32613 mgen.steps.compass.CompassQsfp$_execute_closure1 | execute The current switch configuration block on compass 2 in chassis 2 is set to active
+[05-30-19 02:39:50] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:50] 32613 mgen.steps.compass.CompassQsfp | execute resetting compass in chassis 2, bay 2
+[05-30-19 02:39:50] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:39:50] 32613 mgen.hardware  | case = regex
+[05-30-19 02:39:50] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:39:50] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:39:50] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:39:50] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null}, chassis=2, compNum=2}
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:39:50] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli]
+[05-30-19 02:39:50] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***, privateKey=***}
+[05-30-19 02:39:50] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:50] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:39:50] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:39:50] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:39:50] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:39:50] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@d2a490ac
+[05-30-19 02:39:50] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:39:50] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:39:50] 32613 network.BNTIscli | Saving switch configuration
+[05-30-19 02:39:50] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:39:51] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:39:51] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:39:51] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:39:51] 32613 network.BNTIscli | Entering setClimode: Going from mode user to priv
+[05-30-19 02:39:51] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:39:51] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:39:54] 32613 network.CompassIscli | reloading switch
+[05-30-19 02:39:56] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:40:06] 32613 mgen.steps.compass.CompassQsfp | execute Determining connectivity to compass switch inteface ip fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:40:06] 32613 utils.process  | executing command: [ping6, -c, 1, -w, 600, -i, 30, fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef] env=null
+[05-30-19 02:41:40] 32613 utils.process  | executing command: [ping6, -c, 1, -w, 507, -i, 30, fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef] env=null
+[05-30-19 02:42:13] 32613 utils.process  | executing command: [ping6, -c, 1, -w, 474, -i, 30, fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef] env=null
+[05-30-19 02:42:15] 32613 mgen.steps.compass.CompassQsfp | execute Connectivity established between the compass switch and the laptop
+[05-30-19 02:42:15] 32613 mgen.steps.compass.CompassQsfp | execute sleep 2 more minutes to allow switch to fully initialize
+[05-30-19 02:44:15] 32613 mgen.steps.compass.CompassQsfp | execute Finished configuring Compass in chassis 2, bay 2
+[05-30-19 02:44:15] 32613 mgen.Step      | instantiating Step class mgen.steps.compass.CompassInfo
+[05-30-19 02:44:15] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property rack (class java.lang.String) from 8564-F02 78E497G (class org.codehaus.groovy.runtime.GStringImpl)
+[05-30-19 02:44:15] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property description (class java.lang.String) from Retrieving information about the compass switch (class java.lang.String)
+[05-30-19 02:44:15] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property chassis (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:44:15] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property label (class java.lang.String) from Final Compass information retrieval (class java.lang.String)
+[05-30-19 02:44:15] 32613 mgen.Step$_updateProperties_closure10 | updateProperties setting property bay (class java.lang.String) from 2 (class java.lang.String)
+[05-30-19 02:44:15] 32613 mgen.steps.compass.CompassInfo | updateProperties after prompting user: sourceses: [:]
+[05-30-19 02:44:15] 32613 mgen.hardware  | parsing MTMS "8564-F02 78E497G"
+[05-30-19 02:44:15] 32613 mgen.hardware  | case = regex
+[05-30-19 02:44:15] 32613 mgen.hardware  | Parsed: machineType = 8564, model = F02, serial = 78E497G, mtm = 8564-F02
+[05-30-19 02:44:15] 32613 mgen.hardware  | Found 8564-F02 in rack.models.config
+[05-30-19 02:44:15] 32613 mgen.hardware  | Entering withConnection for compass (chassis: 2, iobay: 2, nodebay: null, tor: null, v7000: null)
+[05-30-19 02:44:15] 32613 common.ConnectionHelper | Entering connectWithRetry: compass, options: {username=admin, extraInfo={hwClass=null}, chassis=2, compNum=2}
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: include_global_config: null
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested: final type: compass, location: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key access
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][access]: [[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]]
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key credentials
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key location
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][location]: [license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]]
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested type compass, key hwClass
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested event.info[][hwClass]: class network.CompassIscli
+[05-30-19 02:44:15] 32613 app.scripts.mgen.hwinfo.groovy | run hwinfo-requested return: info (minus credentials & firmware): [access:[[class:class utils.SshConnection, host:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network:merion]], location:[license:[active:46Port|Upgrade1, enabled:46Port|Upgrade1], io_bay_number:2, mtm:[EN4093, EN4093R], rack_number:8564-F02 78E497G, qsfp_ports:[EXT15, EXT19], chassis:2, type:compass, parent_type:switch, desc:Chassis 2 I/O Module Compass 2, tags:[switch, compass, bnt]], hwClass:class network.CompassIscli]
+[05-30-19 02:44:15] 32613 mgen.hardware  | establishing connection to {class=class utils.SshConnection, host=fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, network=merion, username=admin, password=***, privateKey=***}
+[05-30-19 02:44:15] 32613 utils.SshConnection | connecting to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:44:15] 32613 utils.SshConnection | StrictHostKeyChecking = no
+[05-30-19 02:44:15] 32613 com.ibm.jsch.JschLogger | log Permanently added 'fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef' (RSA) to the list of known hosts.
+[05-30-19 02:44:15] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage RETURN
+[05-30-19 02:44:15] 32613 com.ibm.purescale.utils.UserInfoImpl | showMessage ENTRY
+[05-30-19 02:44:15] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive ENTRY admin@fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef   [Ljava.lang.String;@696a90a1
+[05-30-19 02:44:15] 32613 com.ibm.purescale.utils.UserInfoImpl | promptKeyboardInteractive RETURN
+[05-30-19 02:44:16] 32613 utils.SshConnection | connected to fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:44:16] 32613 mgen.steps.compass.CompassInfo$_execute_closure1 | execute Retrieving information about the Compass
+[05-30-19 02:44:16] 32613 network.BNTIscli | Start collecting system information
+[05-30-19 02:44:16] 32613 utils.CliConnection | CLI command: >>
+<<
+[05-30-19 02:44:16] 32613 utils.CliConnection | CLI command: >>terminal-length 0<<
+[05-30-19 02:44:16] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:44:16] 32613 utils.CliConnection | CLI result:
+Router>
+[05-30-19 02:44:16] 32613 network.BNTIscli | Entering setClimode: Going from mode user to priv
+[05-30-19 02:44:16] 32613 utils.CliConnection | CLI command: >>enable<<
+[05-30-19 02:44:16] 32613 utils.CliConnection | CLI result:
+
+Enable privilege granted.
+Router#
+[05-30-19 02:44:16] 32613 utils.CliConnection | CLI command: >>show sys-info<<
+[05-30-19 02:44:16] 32613 utils.CliConnection | CLI result:
+System Information at 13:57:23 Sun Jan  1, 2000
+Time zone: No timezone configured
+Daylight Savings Time Status: Disabled
+
+Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+
+Switch has been up for 0 days, 0 hours, 3 minutes and 57 seconds.
+Last boot: (reset from Telnet/SSH)
+
+MAC address: a4:8c:db:c7:5b:00    IP (If 1) address: 0.0.0.0
+Internal Management Port MAC Address: a4:8c:db:c7:5b:ef
+Internal Management Port IP Address (if 128): 192.168.70.121
+External Management Port MAC Address: a4:8c:db:c7:5b:fe
+External Management Port IP Address (if 127): 
+
+Software Version 8.4.6 (FLASH image2), active configuration.
+Boot kernel version 8.4.6
+
+
+
+Chassis MTM                 : 8721HC2
+Chassis Serial Num          : J11KTBE
+Hardware Part Number        : 00VX203     
+Hardware Revision           : 00
+Serial Number               : Y014CM75XC02
+Manufacturing Date (WWYY)   : 2217
+PCBA Part Number            : 00D6166     
+PCBA Revision               : 0
+PCBA Number                 : 00
+Board Revision              : 00
+PLD Firmware Version        : 1.7
+
+Temperature Warning         : 37 C (Warning  at 66 C / Recover at 61 C)
+Temperature Shutdown        : 37 C (Shutdown at 72 C / Recover at 67 C)
+Temperature Inlet           : 31 C
+Temperature Exhaust         : 38 C
+Temperature Asic Max        : 40 C (Warning at 100 C / Shutdown at 108 C)
+
+Power Consumption           : 47.250 W (12.536 V   3.769 A)
+
+
+Switch is in I/O Module Bay 2
+
+Router#
+[05-30-19 02:44:16] 32613 network.BNTIscli | sysDisplay: System Information at 13:57:23 Sun Jan  1, 2000
+Time zone: No timezone configured
+Daylight Savings Time Status: Disabled
+
+Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+
+Switch has been up for 0 days, 0 hours, 3 minutes and 57 seconds.
+Last boot: (reset from Telnet/SSH)
+
+MAC address: a4:8c:db:c7:5b:00    IP (If 1) address: 0.0.0.0
+Internal Management Port MAC Address: a4:8c:db:c7:5b:ef
+Internal Management Port IP Address (if 128): 192.168.70.121
+External Management Port MAC Address: a4:8c:db:c7:5b:fe
+External Management Port IP Address (if 127): 
+
+Software Version 8.4.6 (FLASH image2), active configuration.
+Boot kernel version 8.4.6
+
+
+
+Chassis MTM                 : 8721HC2
+Chassis Serial Num          : J11KTBE
+Hardware Part Number        : 00VX203     
+Hardware Revision           : 00
+Serial Number               : Y014CM75XC02
+Manufacturing Date (WWYY)   : 2217
+PCBA Part Number            : 00D6166     
+PCBA Revision               : 0
+PCBA Number                 : 00
+Board Revision              : 00
+PLD Firmware Version        : 1.7
+
+Temperature Warning         : 37 C (Warning  at 66 C / Recover at 61 C)
+Temperature Shutdown        : 37 C (Shutdown at 72 C / Recover at 67 C)
+Temperature Inlet           : 31 C
+Temperature Exhaust         : 38 C
+Temperature Asic Max        : 40 C (Warning at 100 C / Shutdown at 108 C)
+
+Power Consumption           : 47.250 W (12.536 V   3.769 A)
+
+
+Switch is in I/O Module Bay 2
+
+
+[05-30-19 02:44:16] 32613 network.BNTIscli | Value :13:57:23 Sun Jan  1, 2000 field[1] time
+[05-30-19 02:44:16] 32613 network.BNTIscli | Value :8.4.6 (FLASH image2), active configuration. field[1] softver
+[05-30-19 02:44:16] 32613 network.BNTIscli | Value :a4:8c:db:c7:5b:00 field[1] macAddr
+[05-30-19 02:44:16] 32613 network.BNTIscli | Retrieving the boot version on the switch
+[05-30-19 02:44:16] 32613 network.BNTIscli | Entering setClimode: Going from mode priv to priv
+[05-30-19 02:44:16] 32613 utils.CliConnection | CLI command: >>show boot<<
+[05-30-19 02:44:17] 32613 utils.CliConnection | CLI result:
+Current running image version: 8.4.6
+Currently set to boot software image2, active config block.
+NetBoot: disabled, NetBoot tftp server:  , NetBoot cfgfile: 
+Current boot Openflow protocol version: 1.0
+Currently profile is default, set to boot with default profile next time.
+Current FLASH software:
+  image1: version 8.4.6, downloaded 03:23:52 Sun Jan  1, 2000
+  image2: version 8.4.6, downloaded 03:27:18 Sun Jan  1, 2000
+  boot kernel: version 8.4.6
+  bootloader : version 8.4.6
+Currently scheduled reboot time: none
+
+Router#
+[05-30-19 02:44:17] 32613 network.BNTIscli | Entering verifySwitchType: G8272
+[05-30-19 02:44:17] 32613 utils.CliConnection | CLI command: >>show version<<
+[05-30-19 02:44:17] 32613 utils.CliConnection | CLI result:
+System Information at 13:57:24 Sun Jan  1, 2000
+Time zone: No timezone configured
+Daylight Savings Time Status: Disabled
+
+Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+
+Switch has been up for 0 days, 0 hours, 3 minutes and 57 seconds.
+Last boot: (reset from Telnet/SSH)
+
+MAC address: a4:8c:db:c7:5b:00    IP (If 1) address: 0.0.0.0
+Internal Management Port MAC Address: a4:8c:db:c7:5b:ef
+Internal Management Port IP Address (if 128): 192.168.70.121
+External Management Port MAC Address: a4:8c:db:c7:5b:fe
+External Management Port IP Address (if 127): 
+
+Software Version 8.4.6 (FLASH image2), active configuration.
+Boot kernel version 8.4.6
+
+
+
+Chassis MTM                 : 8721HC2
+Chassis Serial Num          : J11KTBE
+Hardware Part Number        : 00VX203     
+Hardware Revision           : 00
+Serial Number               : Y014CM75XC02
+Manufacturing Date (WWYY)   : 2217
+PCBA Part Number            : 00D6166     
+PCBA Revision               : 0
+PCBA Number                 : 00
+Board Revision              : 00
+PLD Firmware Version        : 1.7
+
+Temperature Warning         : 37 C (Warning  at 66 C / Recover at 61 C)
+Temperature Shutdown        : 37 C (Shutdown at 72 C / Recover at 67 C)
+Temperature Inlet           : 31 C
+Temperature Exhaust         : 38 C
+Temperature Asic Max        : 40 C (Warning at 100 C / Shutdown at 108 C)
+
+Power Consumption           : 47.350 W (12.536 V   3.774 A)
+
+
+Switch is in I/O Module Bay 2
+
+Router#
+[05-30-19 02:44:17] 32613 network.BNTIscli | found nameModel: Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+[05-30-19 02:44:17] 32613 network.BNTIscli | Entering verifySwitchType:  EN4093 
+[05-30-19 02:44:17] 32613 utils.CliConnection | CLI command: >>show version<<
+[05-30-19 02:44:17] 32613 utils.CliConnection | CLI result:
+System Information at 13:57:24 Sun Jan  1, 2000
+Time zone: No timezone configured
+Daylight Savings Time Status: Disabled
+
+Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+
+Switch has been up for 0 days, 0 hours, 3 minutes and 58 seconds.
+Last boot: (reset from Telnet/SSH)
+
+MAC address: a4:8c:db:c7:5b:00    IP (If 1) address: 0.0.0.0
+Internal Management Port MAC Address: a4:8c:db:c7:5b:ef
+Internal Management Port IP Address (if 128): 192.168.70.121
+External Management Port MAC Address: a4:8c:db:c7:5b:fe
+External Management Port IP Address (if 127): 
+
+Software Version 8.4.6 (FLASH image2), active configuration.
+Boot kernel version 8.4.6
+
+
+
+Chassis MTM                 : 8721HC2
+Chassis Serial Num          : J11KTBE
+Hardware Part Number        : 00VX203     
+Hardware Revision           : 00
+Serial Number               : Y014CM75XC02
+Manufacturing Date (WWYY)   : 2217
+PCBA Part Number            : 00D6166     
+PCBA Revision               : 0
+PCBA Number                 : 00
+Board Revision              : 00
+PLD Firmware Version        : 1.7
+
+Temperature Warning         : 37 C (Warning  at 66 C / Recover at 61 C)
+Temperature Shutdown        : 37 C (Shutdown at 72 C / Recover at 67 C)
+Temperature Inlet           : 31 C
+Temperature Exhaust         : 38 C
+Temperature Asic Max        : 40 C (Warning at 100 C / Shutdown at 108 C)
+
+Power Consumption           : 47.220 W (12.536 V   3.724 A)
+
+
+Switch is in I/O Module Bay 2
+
+Router#
+[05-30-19 02:44:17] 32613 network.BNTIscli | found nameModel: Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+[05-30-19 02:44:17] 32613 network.BNTIscli | Entering verifySwitchType:  EN4093R 
+[05-30-19 02:44:17] 32613 utils.CliConnection | CLI command: >>show version<<
+[05-30-19 02:44:17] 32613 utils.CliConnection | CLI result:
+System Information at 13:57:24 Sun Jan  1, 2000
+Time zone: No timezone configured
+Daylight Savings Time Status: Disabled
+
+Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+
+Switch has been up for 0 days, 0 hours, 3 minutes and 58 seconds.
+Last boot: (reset from Telnet/SSH)
+
+MAC address: a4:8c:db:c7:5b:00    IP (If 1) address: 0.0.0.0
+Internal Management Port MAC Address: a4:8c:db:c7:5b:ef
+Internal Management Port IP Address (if 128): 192.168.70.121
+External Management Port MAC Address: a4:8c:db:c7:5b:fe
+External Management Port IP Address (if 127): 
+
+Software Version 8.4.6 (FLASH image2), active configuration.
+Boot kernel version 8.4.6
+
+
+
+Chassis MTM                 : 8721HC2
+Chassis Serial Num          : J11KTBE
+Hardware Part Number        : 00VX203     
+Hardware Revision           : 00
+Serial Number               : Y014CM75XC02
+Manufacturing Date (WWYY)   : 2217
+PCBA Part Number            : 00D6166     
+PCBA Revision               : 0
+PCBA Number                 : 00
+Board Revision              : 00
+PLD Firmware Version        : 1.7
+
+Temperature Warning         : 37 C (Warning  at 66 C / Recover at 61 C)
+Temperature Shutdown        : 37 C (Shutdown at 72 C / Recover at 67 C)
+Temperature Inlet           : 31 C
+Temperature Exhaust         : 38 C
+Temperature Asic Max        : 40 C (Warning at 100 C / Shutdown at 108 C)
+
+Power Consumption           : 47.190 W (12.536 V   3.772 A)
+
+
+Switch is in I/O Module Bay 2
+
+Router#
+[05-30-19 02:44:17] 32613 network.BNTIscli | found nameModel: Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1)
+[05-30-19 02:44:17] 32613 mgen.steps.compass.CompassInfo$_execute_closure1 | execute Retrieving licenses
+[05-30-19 02:44:17] 32613 network.CompassIscli | Retrieving licenses from compass switch
+[05-30-19 02:44:17] 32613 network.BNTIscli | Entering setClimode: Going from mode priv to priv
+[05-30-19 02:44:17] 32613 utils.CliConnection | CLI command: >>show software-key<<
+[05-30-19 02:44:18] 32613 utils.CliConnection | CLI result:
+Enabled FoD Key(s):
+  Upgrade1
+
+Non-Reusable Demo License(s):
+  none
+
+
+Router#
+[05-30-19 02:44:18] 32613 mgen.steps.compass.CompassInfo$_execute_closure1 | execute Retrieving image versions
+[05-30-19 02:44:18] 32613 network.BNTIscli | Retrieving the image versions
+[05-30-19 02:44:18] 32613 network.BNTIscli | Entering setClimode: Going from mode priv to priv
+[05-30-19 02:44:18] 32613 utils.CliConnection | CLI command: >>show boot<<
+[05-30-19 02:44:18] 32613 utils.CliConnection | CLI result:
+Current running image version: 8.4.6
+Currently set to boot software image2, active config block.
+NetBoot: disabled, NetBoot tftp server:  , NetBoot cfgfile: 
+Current boot Openflow protocol version: 1.0
+Currently profile is default, set to boot with default profile next time.
+Current FLASH software:
+  image1: version 8.4.6, downloaded 03:23:52 Sun Jan  1, 2000
+  image2: version 8.4.6, downloaded 03:27:18 Sun Jan  1, 2000
+  boot kernel: version 8.4.6
+  bootloader : version 8.4.6
+Currently scheduled reboot time: none
+
+Router#
+[05-30-19 02:44:18] 32613 mgen.steps.compass.CompassInfo$_execute_closure1 | execute Retrieving boot versions
+[05-30-19 02:44:18] 32613 network.BNTIscli | Retrieving the boot version on the switch
+[05-30-19 02:44:18] 32613 network.BNTIscli | Entering setClimode: Going from mode priv to priv
+[05-30-19 02:44:18] 32613 utils.CliConnection | CLI command: >>show boot<<
+[05-30-19 02:44:18] 32613 utils.CliConnection | CLI result:
+Current running image version: 8.4.6
+Currently set to boot software image2, active config block.
+NetBoot: disabled, NetBoot tftp server:  , NetBoot cfgfile: 
+Current boot Openflow protocol version: 1.0
+Currently profile is default, set to boot with default profile next time.
+Current FLASH software:
+  image1: version 8.4.6, downloaded 03:23:52 Sun Jan  1, 2000
+  image2: version 8.4.6, downloaded 03:27:18 Sun Jan  1, 2000
+  boot kernel: version 8.4.6
+  bootloader : version 8.4.6
+Currently scheduled reboot time: none
+
+Router#
+[05-30-19 02:44:18] 32613 mgen.steps.compass.CompassInfo$_execute_closure1 | execute Retrieved the following information about the Compass:
+[bay:2, type:switch, state:Enabled, c:static, i:192.168.70.121, s:255.255.255.0, g:0.0.0.0, pm:disabled, em:disabled, ep:enabled, pip:enabled, ipv6:enabled, ipv6static:enabled, i6:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, p6:64, g6:::, ipv6_addr_in_use:fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef, dhcp6:disabled, sa6:disabled, link_local_addr_in_use:fe80::a68c:dbff:fec7:5bef, powerstate:On, switchNum:2, manufacturer:LNVO (Not Available), manufacturerID:19046, productID:1029, typeModel:Not Available, serialNum:Not Available, hardwareRev:0.0, manufDate:2217, partNo:00VX203, fruNo:00VX205, fruSerialNo:Y014CM75XC02, clei:Not Available, macAddr:a4:8c:db:c7:5b:00, bootRomRelDate:10/03/2017, productName:Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch, deviceDesc:EN4093R 10Gb Ethernet Switch, time:13:57:23 Sun Jan  1, 2000, softver:8.4.6, serial:Y014CM75XC02, boot_version:8.4.6, name:Lenovo Flex System Fabric EN4093R 10Gb Scalable Switch(Upgrade1), model:EN4093R, switch_type:chassis_network_switch, licenses:[enabled:Upgrade1], images:[image1:8.4.6, image2:8.4.6], bootversion:8.4.6, users:[[user:IPASMGR, password:yAaOKKq3, cos:admin, uid:2], [user:CEUSER, password:wQqbPEN0, cos:admin, uid:3], [user:USERID, password:uasPWk09, cos:admin, uid:1], [user:admin, password:admin, cos:admin]]]
+[05-30-19 02:44:18] 32613 utils.SshConnection | disconnected from fd8c:215d:178e:c0de:a68c:dbff:fec7:5bef
+[05-30-19 02:44:18] 32613 mgen.publisher.WorkflowPublisher | publishWorkflowStop(success, errorText) - workflow name=compass_config2_2 - successful=true - errorText=null
+[05-30-19 02:44:18] 32613 utils.process  | executing command: [ping, -c, 1, -w, 2, 9.18.68.44] env=null
+[05-30-19 02:44:18] 32613 mgen.steps.utils.REST | config: {host=http://guaddd03.gdl.mex.ibm.com, port=9080, contentType=[, application/json]}
+[05-30-19 02:44:18] 32613 mgen.publisher.RESTWrapper | Before conn.doPost, URL=http://guaddd03.gdl.mex.ibm.com:9080/MGENPublishing/jaxrs/workflowstop
+[05-30-19 02:44:18] 32613 mgen.publisher.RESTWrapper | After conn.doPost, URL=http://guaddd03.gdl.mex.ibm.com:9080/MGENPublishing/jaxrs/workflowstop -- responseStatus = 500
+[05-30-19 02:44:18] 32613 mgen.publisher.ExceptionHandler | <b>***** CAUGHT EXCEPTION IN MGEN PUBLISHER *****</b>
+[05-30-19 02:44:18] 32613 mgen.publisher.ExceptionHandler | <b>      MGEN will continue, but it is best to determine why the exception occurred</b>
+[05-30-19 02:44:18] 32613 mgen.publisher.ExceptionHandler | <b>      Exception details are in trace.log and/or the log for this workflow</b>
+[05-30-19 02:44:18] 32613 mgen.publisher.ExceptionHandler |       MGEN PUBLISHER is ignoring exception -->> java.lang.Exception: REST doPost call failed, responseStatus = 500, URL=http://guaddd03.gdl.mex.ibm.com:9080/MGENPublishing/jaxrs/workflowstop
+[05-30-19 02:44:18] 32613  java.lang.Exception: REST doPost call failed, responseStatus = 500, URL=http://guaddd03.gdl.mex.ibm.com:9080/MGENPublishing/jaxrs/workflowstop
+[05-30-19 02:44:18] 32613  	at sun.reflect.GeneratedConstructorAccessor145.newInstance(Unknown Source)
+[05-30-19 02:44:18] 32613  	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
+[05-30-19 02:44:18] 32613  	at java.lang.reflect.Constructor.newInstance(Constructor.java:436)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:71)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:81)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+[05-30-19 02:44:18] 32613  	at mgen.publisher.RESTWrapper$_postStatusMsg_closure2.doCall(RESTWrapper.groovy:61)
+[05-30-19 02:44:18] 32613  	at sun.reflect.GeneratedMethodAccessor572.invoke(Unknown Source)
+[05-30-19 02:44:18] 32613  	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+[05-30-19 02:44:18] 32613  	at java.lang.reflect.Method.invoke(Method.java:507)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+[05-30-19 02:44:18] 32613  	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+[05-30-19 02:44:18] 32613  	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1056)
+[05-30-19 02:44:18] 32613  	at zero.core.groovysupport.GroovySupportMetaClass.invokeMethod(GroovySupportMetaClass.java:54)
+[05-30-19 02:44:18] 32613  	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:884)
+[05-30-19 02:44:18] 32613  	at groovy.lang.Closure.call(Closure.java:394)
+[05-30-19 02:44:18] 32613  	at groovy.lang.Closure.call(Closure.java:407)
+[05-30-19 02:44:18] 32613  	at groovy.lang.Closure$call$0.call(Unknown Source)
+[05-30-19 02:44:18] 32613  	at mgen.steps.utils.REST.withConnection(REST.groovy:104)
+[05-30-19 02:44:18] 32613  	at mgen.steps.utils.REST$withConnection.call(Unknown Source)
+[05-30-19 02:44:18] 32613  	at mgen.publisher.RESTWrapper.postStatusMsg(RESTWrapper.groovy:55)
+[05-30-19 02:44:18] 32613  	at mgen.publisher.RESTWrapper$postStatusMsg.call(Unknown Source)
+[05-30-19 02:44:18] 32613  	at mgen.publisher.WorkflowPublisher.publishWorkflowStop(WorkflowPublisher.groovy:144)
+[05-30-19 02:44:18] 32613  	at mgen.publisher.WorkflowPublisher$publishWorkflowStop.call(Unknown Source)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:40)
+[05-30-19 02:44:18] 32613  	at mgen.publisher.WorkflowPublisher$publishWorkflowStop.call(Unknown Source)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callSafe(AbstractCallSite.java:97)
+[05-30-19 02:44:18] 32613  	at mgen.Workflow$_start_closure10.doCall(Workflow.groovy:362)
+[05-30-19 02:44:18] 32613  	at sun.reflect.GeneratedMethodAccessor589.invoke(Unknown Source)
+[05-30-19 02:44:18] 32613  	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+[05-30-19 02:44:18] 32613  	at java.lang.reflect.Method.invoke(Method.java:507)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSite.invoke(PogoMetaMethodSite.java:225)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:51)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+[05-30-19 02:44:18] 32613  	at mgen.Workflow$_start_closure10.doCall(Workflow.groovy)
+[05-30-19 02:44:18] 32613  	at sun.reflect.GeneratedMethodAccessor587.invoke(Unknown Source)
+[05-30-19 02:44:18] 32613  	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+[05-30-19 02:44:18] 32613  	at java.lang.reflect.Method.invoke(Method.java:507)
+[05-30-19 02:44:18] 32613  	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+[05-30-19 02:44:18] 32613  	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+[05-30-19 02:44:18] 32613  	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1056)
+[05-30-19 02:44:18] 32613  	at zero.core.groovysupport.GroovySupportMetaClass.invokeMethod(GroovySupportMetaClass.java:54)
+[05-30-19 02:44:18] 32613  	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:884)
+[05-30-19 02:44:18] 32613  	at groovy.lang.Closure.call(Closure.java:394)
+[05-30-19 02:44:18] 32613  	at groovy.lang.Closure.call(Closure.java:389)
+[05-30-19 02:44:18] 32613  	at groovy.lang.Closure.run(Closure.java:472)
+[05-30-19 02:44:18] 32613  	at java.lang.Thread.run(Thread.java:785)
+[05-30-19 02:44:18] 32613 mgen.publisher.ExceptionHandler | null
+[05-30-19 02:44:18] 32613 mgen.publisher.ExceptionHandler | <b>***** END EXCEPTION IN MGEN PUBLISHER *****</b>
